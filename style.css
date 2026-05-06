@@ -1,7 +1,9 @@
 /* ============================================
    RESET & VARIABLES
    ============================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,40 +12,40 @@
 
 :root {
   /* Couleurs */
-  --bleu-fonce:  #1A1878;
-  --bleu-carte:  #2E2DAE;
-  --blanc:       #ffffff;
-  --noir:       #000;
-  --texte-pale:  rgba(255, 255, 255, 0.72);
-  --texte-gris:  #555;
+  --bleu-fonce: #1A1878;
+  --bleu-carte: #2E2DAE;
+  --blanc: #ffffff;
+  --noir: #000;
+  --texte-pale: rgba(255, 255, 255, 0.72);
+  --texte-gris: #555;
 
   /* Gradient (nav & footer) */
-  --gradient:    linear-gradient(to right, #3B5B9F, #19209C);
+  --gradient: linear-gradient(to right, #3B5B9F, #19209C);
 
   /* Rayons */
   --radius-carte: 40px;
-  --radius-nav:   20px;
+  --radius-nav: 20px;
   --radius-image: 30px;
-  --radius-btn:   8px;
+  --radius-btn: 8px;
 
   /* Espacements */
-  --padding-h:  40px;
-  --padding-v:  80px;
-  --gap:        40px;
-  --gap-sm:     20px;
+  --padding-h: 40px;
+  --padding-v: 80px;
+  --gap: 40px;
+  --gap-sm: 20px;
 
   /* Largeurs max — écart de 80px = 2 × --padding-h pour aligner nav et contenu */
-  --max-width-nav:     1200px;
+  --max-width-nav: 1200px;
   --max-width-content: 1280px;
 
   /* Typographie */
-  --fs-h1:   80px;
-  --fs-h2:   40px;
-  --fs-h3:   30px;
+  --fs-h1: 80px;
+  --fs-h2: 40px;
+  --fs-h3: 30px;
   --fs-body: 14px;
-  --fs-nav:  12px;
-  --fs-xs:   11px;
-  --ls-nav:  0.06em;
+  --fs-nav: 12px;
+  --fs-xs: 11px;
+  --ls-nav: 0.06em;
 }
 
 body {
@@ -63,7 +65,7 @@ nav {
   overflow: hidden;
 }
 
-nav a{
+nav a {
   transition: opacity 0.2s;
 }
 
@@ -184,9 +186,9 @@ main {
 }
 
 .competence-card h3 {
-   font-size: var(--fs-h3);
-   font-weight: 400;
-   margin-bottom: var(--gap);
+  font-size: var(--fs-h3);
+  font-weight: 400;
+  margin-bottom: var(--gap);
 }
 
 .competence-card p {
@@ -254,7 +256,8 @@ main {
   direction: ltr;
 }
 
-.projet-top, .projet-bottom {
+.projet-top,
+.projet-bottom {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -372,7 +375,7 @@ footer {
   overflow: hidden;
 }
 
-footer a{
+footer a {
   transition: opacity 0.2s;
 }
 
@@ -383,12 +386,12 @@ footer a{
    ============================================ */
 @media (max-width: 768px) {
   :root {
-    --padding-h:  28px;
-    --padding-v:  60px;
-    --gap:        28px;
-    --fs-h1:      52px;
-    --fs-h2:      32px;
-    --fs-h3:      24px;
+    --padding-h: 28px;
+    --padding-v: 60px;
+    --gap: 28px;
+    --fs-h1: 52px;
+    --fs-h2: 32px;
+    --fs-h3: 24px;
   }
 
   /* Nav : on masque les liens, garde logo + CTA */
@@ -424,14 +427,14 @@ footer a{
    ============================================ */
 @media (max-width: 480px) {
   :root {
-    --padding-h:  16px;
-    --padding-v:  40px;
-    --gap:        20px;
-    --gap-sm:     12px;
-    --fs-h1:      38px;
-    --fs-h2:      26px;
-    --fs-h3:      20px;
-    --fs-body:    13px;
+    --padding-h: 16px;
+    --padding-v: 40px;
+    --gap: 20px;
+    --gap-sm: 12px;
+    --fs-h1: 38px;
+    --fs-h2: 26px;
+    --fs-h3: 20px;
+    --fs-body: 13px;
   }
 
   /* Hero : taille em fixe pour que le calc() sur em reste cohérent */
